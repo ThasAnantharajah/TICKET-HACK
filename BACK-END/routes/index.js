@@ -8,12 +8,10 @@ const Trip = require('../models/trips');
 //let trips = ['Paris', 'Lyon', 'Marseille', 'Bruxelles'];
 
 router.get('/trips', (req, res) => {
-  //Trip.find().then(data => {
-   
-  res.json({ trips: Trip });
+    res.json({ trips:  });
 });
 
-router.post('/trips', (req, res) => {
+/*router.post('/trips', (req, res) => {
   const newTrip = {
     departure : req.body.departure,
     arrival : req.body.arrival,
@@ -24,5 +22,5 @@ router.post('/trips', (req, res) => {
   //console.log(newtrip);
   res.json({ trips: newTrip });
  });
-
+*/
 module.exports = router;
