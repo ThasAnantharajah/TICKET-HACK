@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tickethack</title>
+  </head>
+  <body class="box-border overflow-x-scroll no-scrollbar">
+    <header class="bg-white h-20 flex justify-between items-center px-8">
+      <div class="logo">
+        <a href="./index.html">
+            <h1 class="text-4xl font-bold text-[#459E85]">Tickethack</h1>
+        </a>
+        
+      </div>
+      <div class="flex font-semibold">
+        <div class="cart mr-10">
+          <a href="./cart.html">Cart</a>
+        </div>
+
+        <div class="bookings">
+          <a href="./bookings.html">Bookings</a>
+        </div>
+      </div>
+    </header>
+
+    <main id= "main" class="bg-[#EFF1F1] w-[100vw]  h-[89.9vh] flex flex-col justify-center items-center">
+        
+        <!-- <div class="cart-list bg-white w-[60vw] flex flex-col justify-center items-center rounded-t-xl p-10">
+            <p class="mb-10 font-semibold text-xl">No tickets in your cart.</p>
+            <p class="font-semibold text-xl">Why not plan a trip?</p>
+        </div> -->
+        <section class="cartDetails">
+          <div class="cart-list bg-white w-[60vw] flex flex-col justify-center items-center rounded-t-xl p-10 px-24 ">
+            <p class="mb-10 font-semibold text-xl">My cart</p>
+         
+            <div class="trip bg-[#EFF1F1] flex justify-between content-center items-center text-xl h-12 w-full rounded-md px-10 py-10 ">
+              <div class="tripDetail flex">
+                <p class="font-semibold">Paris</p>
+                <p>></p>
+                <p class="mr-8 font-semibold">Lyon</p>
+              </div>
+              <p class="mr-8 font-semibold">20:09</p>
+              <p class="mr-8 font-semibold">103€</p>
+              <button class="bg-[#459E85] flex justify-center items-center rounded-md font-normal text-l text-white px-4 py-2 ">X</button>
+          </div> 
+        </div>
+
+        <div class="totalPrice bg-blue-950 w-[60vw] text-white h-20 flex justify-between items-center px-20 rounded-b-xl">
+          <div class="price flex justify-center items-center text-xl">
+            <p class="m-1">Total :</p>
+            <p>103€</p>
+          </div>
+          <a href="./bookings.html">
+            <button class="bg-[#459E85] flex justify-center items-center rounded-md font-normal text-l text-white px-4 py-2 ">Purchase</button>
+          </a>         
+        </div>
+        </section>    
+    </main>
+  </body>
+</html>
