@@ -42,13 +42,13 @@
         <div class="search flex flex-col w-[22vw] h-[50vh] bg-white mr-60 rounded-2xl px-8 py-8">
           <input
             type="text"
-            class="bg-[#EFF1F1] rounded-md h-12 p-4 focus:outline-none focus:ring focus:border-blue-300 "
+            class="departure bg-[#EFF1F1] rounded-md h-12 p-4 focus:outline-none focus:ring focus:border-blue-300 "
             placeholder="Departure"
           />
           <div class="bg-[#E6E8E8] h-0.5 m-0 px-14 "></div>
           <input
             type="text"
-            class="mb-10 bg-[#EFF1F1] rounded-md h-12 p-4 focus:outline-none focus:ring focus:border-blue-300"
+            class="arrival bg-[#EFF1F1] rounded-md h-12 p-4 focus:outline-none focus:ring focus:border-blue-300"
             placeholder="Arrival"
           />
          
@@ -59,11 +59,11 @@
           </button>
         </div>
 
-        <div class="result flex flex-col justify-center items-center w-[22vw] h-[50vh] bg-white rounded-2xl">
+        <!-- <div class="result flex flex-col justify-center items-center w-[22vw] h-[50vh] bg-white rounded-2xl">
           <img src="./src/train.png" alt="" class="h-[15vh] w-[8vw]" />
           <div class="bg-[#459E85] h-0.5 m-0 px-32 m-20 "></div>
           <p class="font-semibold text-xl">It's time to book your future trip.</p>
-        </div>
+        </div> -->
 
         <!-- Trip not found -->
         <!-- <div class="result-not-found flex flex-col justify-center items-center w-[22vw] h-[50vh] bg-white rounded-2xl">
@@ -72,20 +72,21 @@
             <p class="font-semibold text-xl">No trip found.</p>
           </div> -->
 
-          <!-- <div class="result-trip flex flex-col justify-center items-center w-[22vw] h-[50vh] bg-white rounded-2xl px-8 py-8">
-            <div class="trip bg-[#EFF1F1] flex justify-between content-center items-center h-12 w-full rounded-md px-4 py-4">
+          <div class="result-trip flex flex-col justify-center items-center w-[22vw] h-[50vh] bg-white rounded-2xl px-8 py-8">
+            <!-- <div class="trip bg-[#EFF1F1] flex justify-between content-center items-center h-12 w-full rounded-md px-4 py-4">
                 <p class=" departure font-semibold">Paris</p>
                 <p>></p>
                 <p class="arrival font-semibold">Lyon</p>
                 <p class="time mr-8 font-semibold">16:23</p>
                 <p class="price mr-8 font-semibold">126€</p>
                 <button class="bg-[#459E85] flex justify-center items-center rounded-md font-normal text-l text-white px-2 py-1 ">Book</button>
-            </div>
-          </div> -->
+            </div> -->
+          </div>
 
          
       </div>
     </main>
-    <script src="./index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

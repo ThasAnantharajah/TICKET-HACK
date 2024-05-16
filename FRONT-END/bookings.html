@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tickethack</title>
+  </head>
+  <body class="box-border overflow-x-scroll no-scrollbar">
+    <header class="bg-white h-20 flex justify-between items-center px-8">
+      <div class="logo">
+        <a href="./index.html">
+            <h1 class="text-4xl font-bold text-[#459E85]">Tickethack</h1>
+        </a>
+        
+      </div>
+      <div class="flex font-semibold">
+        <div class="cart mr-10">
+          <a href="./cart.html">Cart</a>
+        </div>
+
+        <div class="bookings">
+          <a href="./bookings.html">Bookings</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="bg-[#EFF1F1] w-[100vw]  h-[89.9vh] flex flex-col justify-center items-center">
+        <div class="cart-list bg-white w-[60vw] flex flex-col justify-center items-center rounded-t-xl p-10 font-semibold">
+            <p class="mb-10 font-semibold text-xl">My bookings</p>
+            <div class="trip bg-[#EFF1F1] flex justify-between content-center items-center text-xl h-12 w-full rounded-md px-4 py-10 mb-16 ">
+              <div class="tripDetail flex">
+                <p class="">Paris</p>
+                <p>></p>
+                <p class="mr-8">Lyon</p>
+              </div>
+              <p class="mr-8">20:09</p>
+              <p class="mr-8">103€</p>
+              <p>Departure in 5 hours</p>
+          </div> 
+          <div class="line h-0.5 w-60 bg-black mb-8"></div>
+          <p class="text-[#459E85] text-xl">Enjoy your travels with Tickethack!</p>
+        </div>
+        
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
