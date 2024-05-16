@@ -15,8 +15,8 @@ const moment = require('moment');
 router.get('/trips', (req, res) => {
   const date = new Date (req.query.date);
   const datePlusOne = new Date (moment(date).add(1, "days"));
-  // console.log(date,datePlusOne ); 
- 
+  console.log(date,datePlusOne );
+  
    Trip.find({departure: req.query.departure, arrival: req.query.arrival, date: { $gte: date, $lt: datePlusOne }}).then(data => {
    res.json({ trips:  data });
   })
@@ -24,15 +24,6 @@ router.get('/trips', (req, res) => {
 });
 
 /*router.post('/trips', (req, res) => {
-  const newTrip = {
-    departure : req.body.departure,
-    arrival : req.body.arrival,
-    date : req.body.Date,
-    price: req.body.price,
-  }
-  Trip.push(newTrip);
-  //console.log(newtrip);
-  res.json({ trips: newTrip });
- });
+  });
 */
 module.exports = router;
