@@ -38,9 +38,9 @@ searcheBtn.addEventListener('click', function() {
                                         <p class="arrivalResult mr-4 font-medium">${element.arrival}</p>
                                         <p class="departureTime mr-4 font-medium">${dateTime}</p>
                                         <p class="price mr-4 font-medium">${element.price}€</p>
-                                        <a href="./cart.html">
+                                        
                                         <button class="bookBtn bg-[#459E85] flex justify-center items-center rounded-md font-normal text-l text-white px-2 py-1 ">Book</button>
-                                        <a/>
+                                        
                                     </div>`
     });  
     booking ();
@@ -64,9 +64,29 @@ function booking (){
             const departureResult = div.querySelector('.departureResult').textContent;
             const arrivalResult = div.querySelector('.arrivalResult').textContent;
             const departureTime = div.querySelector('.departureTime').textContent;
-            console.log(numPrice, departureResult, arrivalResult, departureTime);
+                        console.log(numPrice, departureResult, arrivalResult, departureTime);
             
-           
+         
+              
+            //const tripBooking = {}
+
+            fetch(`http://localhost:3000/cart`,
+             {
+                           method: 'POST',
+                           headers: { 'Content-Type': 'application/json' },
+                           body: JSON.stringify({
+                            departure: departureResult,
+                           arrival: arrivalResult,
+                            hour: departureTime,
+                          price: numPrice,
+                           })
+              
+              })
+              .then(response => response.json())
+              .then(data => {
+              console.log(data);
+              window.location.assign("/cart");
+              });
 
         //     tripCart.innerHTML += `  <div class="trip-cart bg-[#EFF1F1] flex justify-between content-center items-center text-xl h-12 w-full rounded-md px-10 py-10 ">
         //     <div class="tripDetail flex">
